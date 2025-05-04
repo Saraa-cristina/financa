@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Meu Financeiro</title>
+  <style>
+    body {
+      background-color: #1c1c1e;
+      color: white;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: #2c2c2e;
+      padding: 10px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .entrada { color: #2ecc71; }
+    .saida { color: #e74c3c; }
+    .balanco { color: #2ecc71; }
+    
+
+    h1 {
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card entrada">
+    <h2>Entradas</h2>
+    <p>R$ 7.840,56</p>
+  </div>
+
+  <div class="card saida">
+    <h2>Saídas</h2>
+    <p>R$ 1.580,45</p>
+  </div>
+
+  <div class="card balanco">
+    <h2>Balanço</h2>
+    <p>R$ 6.260,11</p>
+  </div>
+
+  <h1>Análise</h1>
+</body> 
+<div class="card Análise">
+
+</div>
+</html>
+
+<h1>Categorias</h1>
+</body> 
+<div class="card Categorias">
+  <p>Alimentação      10      R$1,508,15</p>
+  <p>Transporte       10      R$1,508,15</p>
+  <p>Mercado          10      R$1,508,15</p>
+</div>
+</html>
+
+  <h1>Transações</h1>
+</body>
+<div class="card Transações">
+<p>Supermercado Big Master</p>
+</div>
+<div class="card Transações">
+  <p>Supermercado Tropical</p>
+</div>
+</html>
+
+
+
