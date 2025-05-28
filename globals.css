@@ -1,41 +1,175 @@
-@import "tailwindcss";
 
 body {
-  background-color: #1c1c1e;
-  color: white;
-  font-family: Arial, sans-serif;
+  background-color: #121214;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
   padding: 20px;
 }
 
-.card {
-  background-color: #2c2c2e;
-  padding: 10px;
-  border-radius: 10px;
-  margin-bottom: 10px;
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-
-.entrada { 
-  width: 35%;
-  color: #2ecc71; 
- }
-
-.saida { 
-   width: 35%;
-   color: #e74c3c; 
-    gap: "1rem";
-}
-
-.balanco { 
-   width: 35%;
-  color: #2ecc71; 
-   gap: "1rem";
-}
 
 .cards {
-  display:flex
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 30px;
 }
 
-h1 {
-  margin-top: 40px;
+.card {
+  flex-direction: column;
+  padding: 1rem;
+  width: 100%;
+  gap: .5rem;
+  background-color: #1f1f1f;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s;
 }
+
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+
+
+.icon-container {
+  border-radius: 8px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card:hover {
+  transform: translateY(-4px);
+}
+.card img {
+  width: 22px;
+  height: 22px;
+  filter: invert(1);
+}
+
+.card strong {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #bbbbbb;
+}
+
+strong.green {
+  color: #00b37e;
+}
+
+strong.red,
+.amount.red,
+.red {
+  color: #f75a68;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.analysis,
+.categories {
+   flex-direction: column;
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 12px;
+
+}
+
+.analysis h2,
+.categories h2,
+.transactions h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.chart-placeholder {
+  background-color: #000000;
+  height: 200px;
+  border-radius: 8px;
+  opacity: 0.5;
+}
+.categories ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.categories li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-radius: 8px;
+  background-color: #2c2c2e;
+  margin-bottom: 10px;
+  transition: background 0.2s;
+}
+
+.categories li:hover {
+  background-color: #3a3a3c;
+}
+
+.categories li.highlight {
+  background-color: #f75a68;
+  color: white;
+}
+
+.categories li.highlight .amount.red {
+  color: white;
+}
+
+.categories .left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.categories .right {
+  display: flex;
+  gap: 14px;
+}
+
+.transactions {
+  margin-top: 30px;
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.transaction-header,
+.transaction-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+  padding: 12px 0;
+  border-bottom: 1px solid #3a3a3c;
+  font-size: 0.95rem;
+}
+
+.transaction-header {
+  color: #888888;
+  font-weight: bold;
+}
+
+
