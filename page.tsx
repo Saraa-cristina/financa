@@ -1,5 +1,5 @@
 
-//Card modelo
+//Card modelo - ultilizado poteriormente para os outros cards.
 //Card obtendo cardprops como objetivo
 function Card(props: CardProps) {
   return (
@@ -19,7 +19,7 @@ type CardProps = {
   title: string;
   value: string;
   description: string;
-  color: string; // ou: 'green' | 'red'
+  color: string; 
   icon: string;
 };
 
